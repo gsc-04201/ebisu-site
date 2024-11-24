@@ -10,6 +10,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
+import SectionTitle from "./section-title";
 
 export default function PurchaseItemsCarousel() {
   // 買取対象データ
@@ -37,30 +38,10 @@ export default function PurchaseItemsCarousel() {
     <section id="targets" className="py-16 px-4">
       <div className="container mx-auto">
         {/* セクションタイトル */}
-        <div className="text-center mb-10">
-          <h2 className="text-3xl font-bold inline-flex items-center gap-2">
-            <Image
-              src="/star-left.png"
-              alt="result records"
-              width={25}
-              height={25}
-              className="mx-4"
-            />
-            買取対象
-            <Image
-              src="/star-right.png"
-              alt="result records"
-              width={25}
-              height={25}
-              className="mx-4"
-            />
-          </h2>
-          <div className="w-40 h-0.5 bg-yellow-400 mx-auto mt-2"></div>
-          <p className="text-gray-700 text-sm leading-relaxed mt-4">
-            全国どこへでも駆けつけます！
-          </p>
-        </div>
-
+        <SectionTitle
+          title="買取品目"
+          subtitle="自宅に眠るあらゆるものを買い取ります！"
+        />
         {/* カルーセル */}
         <Carousel
           opts={{
@@ -106,6 +87,9 @@ export default function PurchaseItemsCarousel() {
           <CarouselNext className="hidden md:flex -right-12 bg-yellow-400 hover:bg-yellow-500 border-none text-white" />
         </Carousel>
       </div>
+      <p className="w-full text-center text-gray-700 text-sm leading-relaxed mt-8">
+        ※模造品も買取可能です。
+      </p>
     </section>
   );
 }

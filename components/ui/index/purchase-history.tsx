@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import SectionTitle from "./section-title";
 
 export default function PurchaseHistory() {
   // カテゴリーリスト
@@ -45,26 +46,7 @@ export default function PurchaseHistory() {
     <section id="history" className="py-16 px-4">
       <div className="container mx-auto">
         {/* セクションタイトル */}
-        <div className="text-center mb-10">
-          <h2 className="text-3xl font-bold inline-flex items-center gap-2">
-            <Image
-              src="/star-left.png"
-              alt="result records"
-              width={25}
-              height={25}
-              className="mx-4"
-            />
-            買取実績
-            <Image
-              src="/star-right.png"
-              alt="result records"
-              width={25}
-              height={25}
-              className="mx-4"
-            />
-          </h2>
-          <div className="w-40 h-0.5 bg-yellow-400 mx-auto mt-2"></div>
-        </div>
+        <SectionTitle title="買取実績" subtitle="" />
 
         {/* タブ表示 */}
         <Tabs defaultValue="precious-metals" className="w-full">
