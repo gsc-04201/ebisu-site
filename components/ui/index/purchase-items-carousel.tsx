@@ -15,22 +15,35 @@ import SectionTitle from "./section-title";
 export default function PurchaseItemsCarousel() {
   // 買取対象データ
   const items = [
-    { id: 1, title: "金", description: "説明文が入ります。説明文が入ります。" },
-    { id: 2, title: "銀", description: "説明文が入ります。説明文が入ります。" },
+    {
+      id: 1,
+      title: "アクセサリー",
+      description: "説明文が入ります。説明文が入ります。",
+      img: "/accessory.png",
+    },
+    {
+      id: 2,
+      title: "衣類",
+      description: "説明文が入ります。説明文が入ります。",
+      img: "/clothing.png",
+    },
     {
       id: 3,
-      title: "プラチナ",
+      title: "時計",
       description: "説明文が入ります。説明文が入ります。",
+      img: "/watch.png",
     },
     {
       id: 4,
-      title: "ダイヤモンド",
+      title: "電子機器",
       description: "説明文が入ります。説明文が入ります。",
+      img: "/electronics.png",
     },
     {
       id: 5,
-      title: "ダイヤ",
+      title: "ブランド品",
       description: "説明文が入ります。説明文が入ります。",
+      img: "/brand-items.png",
     },
   ];
 
@@ -62,7 +75,7 @@ export default function PurchaseItemsCarousel() {
                     {/* アイテム画像 */}
                     <div className="aspect-square relative bg-gray-100 mb-4">
                       <Image
-                        src="/placeholder.svg"
+                        src={item.img}
                         alt={item.title}
                         fill
                         className="object-cover rounded-lg"

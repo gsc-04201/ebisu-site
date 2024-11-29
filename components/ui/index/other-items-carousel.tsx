@@ -39,22 +39,30 @@ export default function OtherItemsCarousel() {
   ];
 
   return (
-    <section id="targets" className="bg-muted py-16 px-4">
+    <section id="targets" className="bg-yellow-50 py-16 px-4">
       <div className="container mx-auto">
         {/* セクションタイトル */}
         <SectionTitle
           title="その他何でも買い取ります！"
           subtitle="自宅に眠るあらゆるものを買い取ります！"
         />
-        {/* カルーセル */}
-        <Carousel
+        <div className="justify-center text-center items-center flex flex-col">
+          <Image
+            src="/other-items.svg"
+            alt="other items"
+            width={1000}
+            height={1000}
+            className="mx-auto mt-8"
+          />
+        </div>
+        {/* カルーセル 仮でコメントアウト*/}
+        {/* <Carousel
           opts={{
             align: "start",
             loop: true,
           }}
           className="w-full max-w-6xl mx-auto"
         >
-          {/* カルーセルアイテムコンテンツ */}
           <CarouselContent className="-ml-2 md:-ml-4">
             {items.slice(0, 6).map(
               (
@@ -66,7 +74,6 @@ export default function OtherItemsCarousel() {
                 >
                   <Card className="border-none">
                     <CardContent className="p-0">
-                      {/* アイテム画像 */}
                       <div className="aspect-square relative bg-gray-100 mb-4">
                         <Image
                           src="/placeholder.svg"
@@ -75,11 +82,9 @@ export default function OtherItemsCarousel() {
                           className="object-cover rounded-lg"
                         />
                       </div>
-                      {/* アイテムタイトル */}
                       <h3 className="text-xl font-bold mb-2 text-center">
                         {item.title}
                       </h3>
-                      {/* アイテム説明 */}
                       <p className="text-sm text-muted-foreground text-center">
                         {item.description}
                       </p>
@@ -90,10 +95,9 @@ export default function OtherItemsCarousel() {
             )}
           </CarouselContent>
 
-          {/* ナビゲーションボタン */}
           <CarouselPrevious className="hidden md:flex -left-12 bg-yellow-400 hover:bg-yellow-500 border-none text-white" />
           <CarouselNext className="hidden md:flex -right-12 bg-yellow-400 hover:bg-yellow-500 border-none text-white" />
-        </Carousel>
+        </Carousel> */}
       </div>
       {/* <p className="w-full text-center text-gray-700 text-sm leading-relaxed mt-8">
         ※模造品も買取可能です。

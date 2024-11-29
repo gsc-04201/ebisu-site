@@ -8,7 +8,7 @@ import SectionTitle from "./section-title";
 
 export default function Contact() {
   return (
-    <section id="process" className="bg-muted py-20">
+    <section id="process" className=" py-20">
       <div className="container mx-auto px-4">
         {/* セクションタイトル */}
         <SectionTitle title="お問い合わせ" subtitle="" />

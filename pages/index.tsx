@@ -23,7 +23,7 @@ export default function HomePage() {
         <ResultRecords />
         <PurchaseItemsCarousel />
         <OtherItemsCarousel />
-        <PurchaseHistory />
+        {/* <PurchaseHistory /> */}
         <TimeLine />
         <ServiceArea />
         <Advantages />

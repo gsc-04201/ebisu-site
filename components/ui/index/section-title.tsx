@@ -3,8 +3,8 @@ import Image from "next/image";
 const SectionTitle = ({
   title,
   subtitle,
-  leftIconSrc = "/star-left.png",
-  rightIconSrc = "/star-right.png",
+  leftIconSrc = "/star-left.svg",
+  rightIconSrc = "/star-right.svg",
 }) => {
   return (
     <div className="text-center mb-10">

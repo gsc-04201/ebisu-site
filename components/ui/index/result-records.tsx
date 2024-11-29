@@ -15,7 +15,7 @@ export default function ResultRecords() {
         />
         <div className="justify-center text-center items-center flex flex-col">
           <Image
-            src="/jisseki.png"
+            src="/jisseki.svg"
             alt="result records"
             width={1000}
             height={1000}

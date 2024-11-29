@@ -15,7 +15,7 @@ export default function ServiceArea() {
             全国どこへでも駆けつけます！
           </p>
           <Image
-            src="/japan-map.png"
+            src="/japan-map.svg"
             alt="japan map"
             width={400}
             height={400}

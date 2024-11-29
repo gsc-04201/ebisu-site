@@ -6,7 +6,7 @@ export default function Header() {
       <div className="flex items-center justify-start px-6">
         {/* 企業アイコンを左端に配置 */}
         <Image
-          src="/icon2.png" // 企業アイコンのパスを指定
+          src="/company-icon.svg" // 企業アイコンのパスを指定
           alt="Company Logo"
           width={80} // アイコンのサイズ
           height={80} // アイコンのサイズ
