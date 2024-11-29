@@ -2,11 +2,8 @@ import Image from "next/image";
 
 export default function TopView() {
   return (
-    <section
-      id="top-view"
-      className="bg-yellow-50 text-secondary-foreground bg-[url('/top-view-bg.png')] bg-cover bg-center"
-    >
-      <div className="w-full min-h-[600px] bg-yellow-50 relative px-6 py-26 md:py-24 overflow-hidden">
+    <section id="top-view" className=" text-secondary-foreground">
+      <div className="w-full min-h-[600px]  relative px-6 py-26 md:py-24 overflow-hidden">
         <div className="max-w-6xl mx-auto relative">
           <div className="flex flex-col gap-6 md:gap-8 z-10 relative">
             <h1 className="text-4xl md:text-6xl font-bold text-neutral-800 leading-tight md:leading-tight max-w-xl">
@@ -45,7 +42,7 @@ export default function TopView() {
           height={250}
         />
       </div>
+      
     </section>
   );
 }
-

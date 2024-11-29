@@ -11,6 +11,7 @@ import OtherItemsCarousel from "@/components/ui/index/other-items-carousel";
 import TopView from "@/components/ui/index/top-view";
 import Header from "@/components/ui/index/header";
 import Footer from "@/components/ui/index/footer";
+import Image from "next/image";
 
 export default function HomePage() {
   return (
@@ -19,7 +20,7 @@ export default function HomePage() {
       <Header />
       {/* メイン */}
       <main className="flex-grow">
-        <TopView/>
+        <TopView />
         <ResultRecords />
         <PurchaseItemsCarousel />
         <OtherItemsCarousel />
@@ -32,7 +33,15 @@ export default function HomePage() {
         <Contact />
       </main>
       {/* フッター */}
-      <Footer/>
+      <Footer />
+      <div className={`fixed top-0 left-0 w-full h-screen z-[-1]`}>
+        <Image
+          src={`/top-view-bg.png`}
+          alt="top view bg"
+          layout={`fill`}
+          objectFit={`cover`}
+        />
+      </div>
     </div>
   );
 }
