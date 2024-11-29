@@ -28,10 +28,11 @@ const reviews = [
 
 export default function ServiceArea() {
   return (
-    <section id="process" className="bg-yellow-50 py-20">
+    <section id="process" className="bg-yellow-50">
+      
       <div className="container mx-auto px-4">
         {/* セクションタイトル */}
-        <SectionTitle title="安心の実績" subtitle="" />
+        <SectionTitle title="お客様の声" subtitle="" />
         <div className="justify-center text-center">
           <div className="container mx-auto px-4 py-12">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

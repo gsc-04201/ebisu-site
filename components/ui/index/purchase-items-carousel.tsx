@@ -48,7 +48,7 @@ export default function PurchaseItemsCarousel() {
   ];
 
   return (
-    <section id="targets" className="py-16 px-4">
+    <section id="targets" className="">
       <div className="container mx-auto">
         {/* セクションタイトル */}
         <SectionTitle
@@ -103,6 +103,13 @@ export default function PurchaseItemsCarousel() {
       <p className="w-full text-center text-gray-700 text-sm leading-relaxed mt-8">
         ※模造品も買取可能です。
       </p>
+      <Image
+        src="/top-wave.png"
+        alt="top wave"
+        width={1920}
+        height={500}
+        className="object-cover"
+      />
     </section>
   );
 }

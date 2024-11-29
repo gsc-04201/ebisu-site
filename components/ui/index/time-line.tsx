@@ -39,7 +39,14 @@ const timelineSteps = [
 
 export default function Timeline() {
   return (
-    <section id="process" className="bg-muted py-20">
+    <section id="process" className="">
+      <Image
+        src="/bottom-wave.png"
+        alt="bottom wave"
+        width={1920}
+        height={500}
+        className="object-cover"
+      />
       <div className="container mx-auto px-4">
         {/* セクションタイトル */}
         <SectionTitle title="ご利用の流れ" subtitle="" />
@@ -79,6 +86,13 @@ export default function Timeline() {
           ))}
         </div> */}
       </div>
+      <Image
+        src="/top-wave-gray.png"
+        alt="bottom wave"
+        width={1920}
+        height={500}
+        className="object-cover"
+      />
     </section>
   );
 }

@@ -6,13 +6,18 @@ import SectionTitle from "./section-title";
 
 export default function ResultRecords() {
   return (
-    <section id="process" className=" py-20">
-      <div className="container mx-auto px-4">
+    <section id="process" className="">
+      <div
+        className="w-full mx-auto"
+        style={{
+          backgroundImage: `url('/result-view-bg.png')`,
+          backgroundSize: "cover", // 背景画像をdivのサイズに合わせてカバー
+          backgroundPosition: "center", // 背景画像を中央に配置
+          backgroundRepeat: "no-repeat", // 繰り返しを防止
+        }}
+      >
         {/* セクションタイトル */}
-        <SectionTitle
-          title="安心の実績"
-          subtitle=""
-        />
+        <SectionTitle title="安心の実績" subtitle="" />
         <div className="justify-center text-center items-center flex flex-col">
           <Image
             src="/jisseki.svg"
@@ -23,6 +28,13 @@ export default function ResultRecords() {
           />
         </div>
       </div>
+      <Image
+        src="/bottom-wave.png"
+        alt="bottom wave"
+        width={1920}
+        height={500}
+        className="object-cover"
+      />
     </section>
   );
 }

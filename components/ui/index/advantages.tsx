@@ -6,11 +6,18 @@ import SectionTitle from "./section-title";
 
 export default function Advantages() {
   return (
-    <section id="process" className="bg-yellow-50 py-20">
+    <section id="process" className="">
+      <Image
+        src="/bottom-wave-gray.png"
+        alt="bottom wave"
+        width={1920}
+        height={500}
+        className="object-cover"
+      />
       <div className="container mx-auto px-4">
         {/* セクションタイトル */}
         <SectionTitle title="私たちの3つの強み" subtitle="" />
-        
+
         <div className="max-w-6xl mx-auto px-4 py-12">
           <section className="mb-20 flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 relative">
@@ -76,6 +83,13 @@ export default function Advantages() {
           </section>
         </div>
       </div>
+      <Image
+        src="/top-wave.png"
+        alt="top wave"
+        width={1920}
+        height={500}
+        className="object-cover"
+      />
     </section>
   );
 }

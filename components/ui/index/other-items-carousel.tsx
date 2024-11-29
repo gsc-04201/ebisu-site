@@ -39,13 +39,13 @@ export default function OtherItemsCarousel() {
   ];
 
   return (
-    <section id="targets" className="bg-yellow-50 py-16 px-4">
+    <section id="targets" className="bg-yellow-50 px-4">
       <div className="container mx-auto">
         {/* セクションタイトル */}
-        <SectionTitle
+        {/* <SectionTitle
           title="その他何でも買い取ります！"
           subtitle="自宅に眠るあらゆるものを買い取ります！"
-        />
+        /> */}
         <div className="justify-center text-center items-center flex flex-col">
           <Image
             src="/other-items.png"
@@ -99,9 +99,10 @@ export default function OtherItemsCarousel() {
           <CarouselNext className="hidden md:flex -right-12 bg-yellow-400 hover:bg-yellow-500 border-none text-white" />
         </Carousel> */}
       </div>
-      {/* <p className="w-full text-center text-gray-700 text-sm leading-relaxed mt-8">
+      <p className="w-full text-center text-gray-700 text-sm leading-relaxed mt-8">
         ※模造品も買取可能です。
-      </p> */}
+      </p>
+      
     </section>
   );
 }

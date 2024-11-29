@@ -12,13 +12,17 @@ import SectionTitle from "./section-title";
 
 export default function Questions() {
   return (
-    <section id="process" className=" py-20">
+    <section id="process" className="">
+      <Image
+        src="/bottom-wave.png"
+        alt="bottom wave"
+        width={1920}
+        height={500}
+        className="object-cover"
+      />
       <div className="container mx-auto px-4">
         {/* セクションタイトル */}
-       <SectionTitle
-          title="よくある質問"
-          subtitle=""
-        />
+        <SectionTitle title="よくある質問" subtitle="" />
         <div className="justify-center text-center">
           <Accordion
             type="single"
@@ -54,33 +58,4 @@ export default function Questions() {
       </div>
     </section>
   );
-}
-
-{
-  /* <Accordion type="single" collapsible className="w-full">
-  <AccordionItem value="item-1" className="border-t border-gray-200">
-    <AccordionTrigger className="text-left font-normal">
-      Q1. 買取査定にはどれくらい時間がかかりますか？
-    </AccordionTrigger>
-    <AccordionContent>
-      お品物の種類や点数にもよりますが、通常は査定に約10〜15分程度お時間をいただいております。お急ぎの場合はスタッフにお申し付けていただければ、できる限り迅速に対応いたします。
-    </AccordionContent>
-  </AccordionItem>
-  <AccordionItem value="item-2" className="border-t border-gray-200">
-    <AccordionTrigger className="text-left font-normal">
-      Q2. 査定は無料ですか？
-    </AccordionTrigger>
-    <AccordionContent>
-      はい、査定は全て無料で行っております。査定額にご納得いただけない場合でも、キャンセル料などは一切発生いたしませんので、お気軽にご利用ください。
-    </AccordionContent>
-  </AccordionItem>
-  <AccordionItem value="item-3" className="border-t border-b border-gray-200">
-    <AccordionTrigger className="text-left font-normal">
-      Q3. 身分証明書は必要ですか？
-    </AccordionTrigger>
-    <AccordionContent>
-      はい、買取の際には法律に基づき身分証明書のご提示が必要となります。運転免許証、パスポート、マイナンバーカードなどの公的な身分証をご用意ください。
-    </AccordionContent>
-  </AccordionItem>
-</Accordion>; */
 }

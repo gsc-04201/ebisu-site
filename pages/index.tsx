@@ -17,7 +17,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen flex flex-col">
       {/* ヘッダー */}
-      <Header />
+      {/* <Header /> */}
       {/* メイン */}
       <main className="flex-grow">
         <TopView />
@@ -34,14 +34,6 @@ export default function HomePage() {
       </main>
       {/* フッター */}
       <Footer />
-      {/* <div className={`fixed top-0 left-0 w-full h-screen z-[-1]`}>
-        <Image
-          src={`/top-view-bg.svg`}
-          alt="top view bg"
-          layout={`fill`}
-          objectFit={`cover`}
-        />
-      </div> */}
     </div>
   );
 }

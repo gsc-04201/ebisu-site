@@ -4,9 +4,9 @@ export default function Document() {
   return (
     <Html lang="ja">
       <Head>
-        {/* Zen Old Minchoフォントをインポート */}
+        {/* Tsukushi A Round Gothic フォントをインポート */}
         <link
-          href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Tsukushi+ARound+Gothic&display=swap"
           rel="stylesheet"
         />
       </Head>

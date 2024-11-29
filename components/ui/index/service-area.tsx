@@ -6,8 +6,9 @@ import SectionTitle from "./section-title";
 
 export default function ServiceArea() {
   return (
-    <section id="process" className=" py-20">
-      <div className="container mx-auto px-4">
+    <section id="process" className="bg-muted pb-4">
+      
+      <div className="container mx-auto">
         {/* セクションタイトル */}
         <SectionTitle title="対応エリア" subtitle="" />
         <div className="justify-center text-center items-center flex flex-col">
