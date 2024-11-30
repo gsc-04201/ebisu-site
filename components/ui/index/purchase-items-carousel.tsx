@@ -10,8 +10,25 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import SectionTitle from "./section-title";
+import { useEffect, useState } from "react";
 
 export default function PurchaseItemsCarousel() {
+  // sm効かないから無理やり変えた
+  const [isSm, setIsSm] = useState(false);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSm(window.innerWidth >= 640); // Tailwindの`sm`ブレークポイント（640px）
+    };
+
+    // 初期値設定とリスナー登録
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    // クリーンアップ
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   // 買取対象データ
   const items = [
     {
@@ -49,8 +66,11 @@ export default function PurchaseItemsCarousel() {
       img: "/brand-items.png",
     },
   ];
+  console.log(isSm)
   const ItemCard: React.FC<{ item: (typeof items)[0] }> = ({ item }) => (
-    <Card className=" sm:w-1/2 md:w-1/6 p-2">
+    <Card
+      className={`${isSm ? "mx-0" : "mx-6"} sm:w-1/2 md:w-1/6 p-2`}
+    >
       <img
         src={item.img}
         alt={item.title}

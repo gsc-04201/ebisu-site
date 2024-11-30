@@ -1,12 +1,23 @@
 module.exports = {
   darkMode: ["class"],
   content: [
+    "./components/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
     "./app/**/*.{js,ts,jsx,tsx}", // 必要に応じてプロジェクトに応じて追加
   ],
   theme: {
     extend: {
+      spacing: {
+        "sm-mx": "1rem", // 必要な値を追加
+      },
+      screens: {
+        sm: "640px", // デフォルト
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+        "2xl": "1536px",
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
