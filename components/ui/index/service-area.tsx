@@ -7,7 +7,6 @@ import SectionTitle from "./section-title";
 export default function ServiceArea() {
   return (
     <section id="process" className="bg-muted pb-4">
-      
       <div className="container mx-auto">
         {/* セクションタイトル */}
         <SectionTitle title="対応エリア" subtitle="" />
@@ -20,7 +19,7 @@ export default function ServiceArea() {
             alt="japan map"
             width={400}
             height={400}
-            className="mx-auto mt-8"
+            className="mx-auto mt-8 scale-90 sm:scale-100 "
           />
         </div>
       </div>

@@ -22,32 +22,35 @@ export default function TopView() {
           />
         </div>
         <div className="max-w-6xl mx-auto relative">
-          <div className="flex flex-col gap-6 md:gap-10 z-10 relative py-12">
-            <h1 className="text-4xl md:text-6xl font-bold text-neutral-800 leading-tight md:leading-tight max-w-xl">
-              眠っているお宝、
-              <br />
-              驚きの価格で買い取ります
-            </h1>
-            <p className="text-lg md:text-xl">
-              あなたのご自宅のいらないもの、わたしたちに売ってみませんか？
-              <br />
-              査定のご相談など、まずはお気軽にお問い合わせください。
-            </p>
-            <a
-              href="tel:+0664505620"
-              aria-label="電話でお問い合わせ"
-              className=""
-            >
-              <Image
-                src="/phone-bunner.svg"
-                alt="Button Icon"
-                width={500}
-                height={500}
-                className="shadow-lg hover:scale-105 hover:shadow-xl transition-all duration-200"
-              />
-            </a>
+          <div className="max-w-6xl mx-auto relative">
+            <div className="flex flex-col gap-6 md:gap-10 z-10 relative py-14 md:py-24 mt-10 md:mt-0">
+              {/* テキスト部分 */}
+              <h1 className="text-4xl md:text-6xl font-bold text-neutral-800 leading-tight md:leading-tight max-w-xl">
+                眠っているお宝、
+                <br />
+                驚きの価格で買い取ります
+              </h1>
+
+              {/* 電話ボタン */}
+              <a
+                href="tel:+0664505620"
+                aria-label="電話でお問い合わせ"
+                className="inline-block"
+                style={{ width: "fit-content" }}
+              >
+                <Image
+                  src="/phone-bunner.svg"
+                  alt="Button Icon"
+                  width={500}
+                  height={500}
+                  className="shadow-lg hover:scale-105 hover:shadow-xl transition-all duration-200 w-full max-w-[220px] md:max-w-[500px]"
+                />
+              </a>
+            </div>
           </div>
-          <div className="absolute right-[-10%] bottom-[-120px] w-[95%] md:w-[80%] aspect-square max-w-[700px]">
+
+          {/* 猫イラスト部分 */}
+          <div className="absolute right-[-10%] bottom-[-90px] md:bottom-[-110px] w-[70%] sm:w-[85%] md:w-[80%] aspect-square max-w-[500px] md:max-w-[700px]">
             <Image
               src="/ebisu-neko.svg"
               alt="Cute cat in kimono fishing"
@@ -64,6 +67,7 @@ export default function TopView() {
             alt="atention bunner"
             width={250}
             height={250}
+            className="max-w-[180px] md:max-w-[500px]"
           />
         </div>
       </div>

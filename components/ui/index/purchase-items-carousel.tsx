@@ -61,14 +61,14 @@ export default function PurchaseItemsCarousel() {
             align: "start",
             loop: true,
           }}
-          className="w-full max-w-6xl mx-auto"
+          className="w-full max-w-6xl mx-auto scale-90 sm:scale-100 transition-transform"
         >
           {/* カルーセルアイテムコンテンツ */}
           <CarouselContent className="-ml-2 md:-ml-4">
             {items.map((item) => (
               <CarouselItem
                 key={item.id}
-                className="pl-2 md:pl-4 md:basis-1/3 lg:basis-1/4"
+                className="pl-2 md:pl-4 md:basis-1/3 lg:basis-1/5"
               >
                 <Card className="border-none">
                   <CardContent className="p-0">
