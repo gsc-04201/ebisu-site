@@ -2,7 +2,10 @@ import Image from "next/image";
 
 export default function TopView() {
   return (
-    <section id="top-view" className="text-secondary-foreground">
+    <section
+      id="top-view"
+      className="text-secondary-foreground"
+    >
       <div
         className="w-full min-h-[540px] relative py-26 md:py-24 overflow-hidden"
         style={{
