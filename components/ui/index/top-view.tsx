@@ -4,7 +4,7 @@ export default function TopView() {
   return (
     <section id="top-view" className="text-secondary-foreground">
       <div
-        className="w-full min-h-[600px] relative py-26 md:py-24 overflow-hidden"
+        className="w-full min-h-[540px] relative py-26 md:py-24 overflow-hidden"
         style={{
           backgroundImage: `url('/top-view-bg.png')`,
           backgroundSize: "cover",
@@ -21,32 +21,30 @@ export default function TopView() {
             height={80}
           />
         </div>
-        <div className="max-w-6xl mx-auto relative">
-          <div className="max-w-6xl mx-auto relative">
-            <div className="flex flex-col gap-6 md:gap-10 z-10 relative py-14 md:py-24 mt-10 md:mt-0">
-              {/* テキスト部分 */}
-              <h1 className="text-4xl md:text-6xl font-bold text-neutral-800 leading-tight md:leading-tight max-w-xl">
-                眠っているお宝、
-                <br />
-                驚きの価格で買い取ります
-              </h1>
 
-              {/* 電話ボタン */}
-              <a
-                href="tel:+0664505620"
-                aria-label="電話でお問い合わせ"
-                className="inline-block"
-                style={{ width: "fit-content" }}
-              >
-                <Image
-                  src="/phone-bunner.svg"
-                  alt="Button Icon"
-                  width={500}
-                  height={500}
-                  className="shadow-lg hover:scale-105 hover:shadow-xl transition-all duration-200 w-full max-w-[220px] md:max-w-[500px]"
-                />
-              </a>
-            </div>
+        <div className="max-w-6xl mx-auto relative">
+          {/* テキスト部分 */}
+          <div className="flex flex-col gap-6 md:gap-10 z-10 relative py-14 md:py-24 mt-10 md:mt-0">
+            <h1 className="text-4xl md:text-6xl font-bold text-neutral-800 leading-tight md:leading-tight max-w-xl">
+              眠っているお宝、
+              <br />
+              驚きの価格で買い取ります
+            </h1>
+
+            {/* 電話ボタン */}
+            <a
+              href="tel:+0664505620"
+              aria-label="電話でお問い合わせ"
+              className="inline-block max-w-[220px] md:max-w-[500px] shadow-lg hover:scale-105 hover:shadow-xl transition-all duration-200"
+            >
+              <Image
+                src="/phone-bunner.svg"
+                alt="Button Icon"
+                width={500}
+                height={500}
+                className="w-full"
+              />
+            </a>
           </div>
 
           {/* 猫イラスト部分 */}
@@ -60,6 +58,7 @@ export default function TopView() {
             />
           </div>
         </div>
+
         {/* 注意バナー */}
         <div className="max-w-md mx-auto flex justify-center py-6 mt-10">
           <Image

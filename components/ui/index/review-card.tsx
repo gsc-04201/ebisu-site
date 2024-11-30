@@ -9,10 +9,18 @@ interface ReviewCardProps {
 export function ReviewCard({ quote, customer, rating }: ReviewCardProps) {
   return (
     <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-sm">
-      <div className="mb-4 text-2xl font-serif">"</div>
+      {/* 上のクォーテーション（左端に配置） */}
+      <div className="w-full flex justify-start text-2xl font-serif mb-4">
+        "
+      </div>
+
       <p className="mb-4 text-center text-gray-700">{quote}</p>
-      <div className="mb-2 text-2xl font-serif">"</div>
+
+      {/* 下のクォーテーション（右端に配置） */}
+      <div className="w-full flex justify-end text-2xl font-serif mb-2">"</div>
+
       <p className="mb-2 text-sm text-gray-500">—{customer}</p>
+
       <div className="flex">
         {[...Array(5)].map((_, i) => (
           <Star

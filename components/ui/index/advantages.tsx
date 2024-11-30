@@ -8,7 +8,7 @@ export default function Advantages() {
   return (
     <section id="process" className="">
       <Image
-        src="/bottom-wave-gray.png"
+        src="/bottom-wave-gray.svg"
         alt="bottom wave"
         width={1920}
         height={500}
@@ -84,7 +84,7 @@ export default function Advantages() {
         </div>
       </div>
       <Image
-        src="/top-wave.png"
+        src="/top-wave.svg"
         alt="top wave"
         width={1920}
         height={500}

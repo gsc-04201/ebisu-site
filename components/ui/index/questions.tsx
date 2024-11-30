@@ -14,7 +14,7 @@ export default function Questions() {
   return (
     <section id="process" className="">
       <Image
-        src="/bottom-wave.png"
+        src="/bottom-wave.svg"
         alt="bottom wave"
         width={1920}
         height={500}

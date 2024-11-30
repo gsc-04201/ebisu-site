@@ -29,7 +29,7 @@ export default function ResultRecords() {
         </div>
       </div>
       <Image
-        src="/bottom-wave.png"
+        src="/bottom-wave.svg"
         alt="bottom wave"
         width={1920}
         height={500}

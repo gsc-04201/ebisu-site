@@ -28,8 +28,10 @@ const reviews = [
 
 export default function ServiceArea() {
   return (
-    <section id="process" className="bg-yellow-50">
-      
+    <section
+      id="process"
+      style={{ backgroundColor: "#FFFAE0" }}
+    >
       <div className="container mx-auto px-4">
         {/* セクションタイトル */}
         <SectionTitle title="お客様の声" subtitle="" />

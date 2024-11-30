@@ -41,7 +41,7 @@ export default function Timeline() {
   return (
     <section id="process" className="">
       <Image
-        src="/bottom-wave.png"
+        src="/bottom-wave.svg"
         alt="bottom wave"
         width={1920}
         height={500}
@@ -56,12 +56,12 @@ export default function Timeline() {
             alt="time line pc"
             width={800}
             height={800}
-            className="mx-auto mt-0 sm:mt-8 scale-90 sm:scale-100 transition-transform"
+            className="mx-auto mt-0 sm:mt-8 scale-90 sm:scale-90 transition-transform"
           />
         </div>
       </div>
       <Image
-        src="/top-wave-gray.png"
+        src="/top-wave-gray.svg"
         alt="bottom wave"
         width={1920}
         height={500}

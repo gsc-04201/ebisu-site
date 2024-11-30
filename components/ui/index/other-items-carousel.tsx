@@ -39,7 +39,11 @@ export default function OtherItemsCarousel() {
   ];
 
   return (
-    <section id="targets" className="bg-yellow-50 px-4">
+    <section
+      id="targets"
+      className="px-4"
+      style={{ backgroundColor: "#FFFAE0" }}
+    >
       <div className="container mx-auto">
         {/* セクションタイトル */}
         {/* <SectionTitle
@@ -102,7 +106,6 @@ export default function OtherItemsCarousel() {
       <p className="w-full text-center text-gray-700 text-sm leading-relaxed mt-8">
         ※模造品も買取可能です。
       </p>
-      
     </section>
   );
 }
