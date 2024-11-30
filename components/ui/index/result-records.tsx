@@ -20,7 +20,7 @@ export default function ResultRecords() {
         <SectionTitle title="安心の実績" subtitle="" />
         <div className="justify-center text-center items-center flex flex-col">
           <Image
-            src="/jisseki.svg"
+            src="/Results.svg"
             alt="result records"
             width={1000}
             height={1000}
