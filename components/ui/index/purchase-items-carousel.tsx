@@ -2,13 +2,7 @@
 
 import * as React from "react";
 import Image from "next/image";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+
 import {
   Card,
   CardContent,
@@ -23,31 +17,35 @@ export default function PurchaseItemsCarousel() {
     {
       id: 1,
       title: "アクセサリー",
-      description: "説明文が入ります。説明文が入ります。",
+      description:
+        "高品質なアクセサリーをお売りください。貴金属や宝石類も対象です。",
       img: "/accessory.png",
     },
     {
       id: 2,
       title: "衣類",
-      description: "説明文が入ります。説明文が入ります。",
+      description:
+        "不要になった衣類を買取いたします。ブランド品や状態の良い服をお持ちください。",
       img: "/clothing.png",
     },
     {
       id: 3,
       title: "時計",
-      description: "説明文が入ります。説明文が入ります。",
+      description:
+        "高級時計やアンティーク時計など、幅広い種類の時計を買取しています。",
       img: "/watch.png",
     },
     {
       id: 4,
       title: "電子機器",
-      description: "説明文が入ります。説明文が入ります。",
+      description:
+        "スマートフォン、パソコン、カメラなどの電子機器をお売りください。",
       img: "/electronics.png",
     },
     {
       id: 5,
       title: "ブランド品",
-      description: "説明文が入ります。説明文が入ります。",
+      description: "人気ブランドのバッグや財布、アクセサリーを買取いたします。",
       img: "/brand-items.png",
     },
   ];
