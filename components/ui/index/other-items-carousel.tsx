@@ -52,7 +52,7 @@ export default function OtherItemsCarousel() {
         /> */}
         <div className="justify-center text-center items-center flex flex-col">
           <Image
-            src="/other-items.png"
+            src="/other-items2.png"
             alt="other items"
             width={1000}
             height={1000}
