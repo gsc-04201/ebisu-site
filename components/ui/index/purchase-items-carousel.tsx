@@ -23,14 +23,14 @@ export function PurchaseItemsCarousel({ isSm }: PurchaseItemsCarouselProps) {
       id: 1,
       title: "アクセサリー",
       description:
-        "高品質なアクセサリーをお売りください。貴金属や宝石類も対象です。",
+        "高品質なアクセサリーをお売りください。貴金属や宝石類も対象です。古いものでもイミテーションでも大丈夫です。",
       img: "/accessory.png",
     },
     {
       id: 2,
       title: "衣類",
       description:
-        "不要になった衣類を買取いたします。ブランド品や状態の良い服をお持ちください。",
+        "不要になった衣類を買取いたします。ノーブランド少々状態の悪いものでも可能です。",
       img: "/clothing.png",
     },
     {
