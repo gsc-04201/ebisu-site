@@ -4,7 +4,6 @@ export default function Document() {
   return (
     <Html lang="ja">
       <Head>
-        <title>リサイクルエビス - 高価買取の買取屋さん</title>
         <meta
           name="description"
           content="眠っているお宝、驚きの価格で買い取ります。高価買取なら買取屋さん「エビス」にお任せください！何でも買取対応。"
@@ -20,7 +19,6 @@ export default function Document() {
         />
         <meta property="og:image" content="/og-image.jpg" />
         <meta property="og:type" content="website" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="canonical" href="https://www.recycleebisu.com/" />
         {/* Tsukushi A Round Gothic フォントをインポート */}
         <link
