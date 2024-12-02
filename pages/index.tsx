@@ -40,12 +40,22 @@ export default function HomePage() {
   };
   // サイズや位置の変更を `isSm` に基づいて調整
   const buttonSize = isSm
-    ? { width: 80, height: 80, bottom: "10", right: "10" }
-    : { width: 50, height: 50, bottom: "12", right: "4" };
+    ? { width: 100, height: 100 }
+    : { width: 70, height: 70 };
+
+  const buttonStyle = {
+    position: "fixed" as const,
+    bottom: "20px",
+    right: "20px",
+    width: `${buttonSize.width}px`,
+    height: `${buttonSize.height}px`,
+  };
 
   const buttonProps = {
     onClick: handleScrollToTop,
-    className: `fixed bottom-${buttonSize.bottom} right-${buttonSize.right} bg-gray-200 rounded-full p-2 shadow-lg hover:bg-gray-300 focus:outline-none`,
+    className:
+      "bg-gray-200 rounded-full p-2 shadow-lg hover:bg-gray-300 focus:outline-none",
+    style: buttonStyle,
   };
 
   return (
