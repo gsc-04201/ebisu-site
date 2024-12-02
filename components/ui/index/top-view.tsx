@@ -53,7 +53,7 @@ export default function TopView() {
           {/* 猫イラスト部分 */}
           <div className="absolute right-[-10%] bottom-[-90px] md:bottom-[-110px] w-[70%] sm:w-[85%] md:w-[80%] aspect-square max-w-[500px] md:max-w-[700px]">
             <Image
-              src="/ebisu-neko.svg"
+              src="/neko_enhanced.png"
               alt="Cute cat in kimono fishing"
               fill
               className="object-contain"
