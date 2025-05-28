@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import PurchaseHistory from "@/components/ui/index/purchase-history";
 import TimeLine from "@/components/ui/index/time-line";
 import Advantages from "@/components/ui/index/advantages";
@@ -6,6 +6,7 @@ import ServiceArea from "@/components/ui/index/service-area";
 import CustomerReview from "@/components/ui/index/customer-review";
 import Questions from "@/components/ui/index/questions";
 import Contact from "@/components/ui/index/contact";
+import StorePurchase from "@/components/ui/index/store-purchase";
 import ResultRecords from "@/components/ui/index/result-records";
 import OtherItemsCarousel from "@/components/ui/index/other-items-carousel";
 import TopView from "@/components/ui/index/top-view";
@@ -76,6 +77,7 @@ export default function HomePage() {
         <Advantages />
         <CustomerReview />
         <Questions />
+        <StorePurchase />
         <Contact />
       </main>
       {/* スクロールボタン */}
